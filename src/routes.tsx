@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Footer } from "./components/Footer/Footer";
-import Home from "./pages/home";
+import { Home } from "./pages/home";
 
 export const Routes = () => {
     return (
