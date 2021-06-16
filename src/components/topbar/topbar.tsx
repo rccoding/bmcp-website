@@ -1,11 +1,9 @@
 import React from 'react'
 
-function topbar() {
+export const Topbar: React.FC = () => {
     return (
         <div>
-            <h1>xyz</h1>
+            <h1>Topbar</h1>
         </div>
     )
 }
-
-export default topbar
