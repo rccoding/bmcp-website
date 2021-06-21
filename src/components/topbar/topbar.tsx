@@ -62,7 +62,7 @@ export const Topbar = () => {
         </Button>
          </div>
         </Hidden>
-      <Menu keepMounted open={!!open} anchorEl={menuAnchorRef.current}  onClose={closeMenu} >
+      <Menu keepMounted open={open} anchorEl={menuAnchorRef.current}  onClose={closeMenu} >
         <MenuItem>
         <MaterialLink component="h3" variant="h6" color="primary">
           Home
