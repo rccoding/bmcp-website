@@ -98,5 +98,3 @@ export const Topbar = () => {
           </MuiAppBar>
   )
 }
-
-export default Topbar;
