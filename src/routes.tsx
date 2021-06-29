@@ -8,6 +8,10 @@ export const Routes = () => {
         <Router>
             <Switch>
                 <Route path='/' component={Home} exact />
+                {/* <Route path='/about' component={About} />
+                <Route path='/srvices' component={Services} />
+                <Route path='/footer' component={Footer} />
+                <Route path='/footer' component={Footer} /> */}
                 <Route path='/footer' component={Footer} />
             </Switch>
         </Router >
