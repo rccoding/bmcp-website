@@ -8,6 +8,10 @@ import sushilShrivastav from '../../images/sushilShrivastav.png'
 import rishabSahani from '../../images/rishabSahani.png'
 import ourvision from '../../images/ourvision.png'
 import agility from '../../svgs/agility.svg'
+import dependebility from '../../svgs/dependebility.svg'
+import innovation from '../../svgs/innovation.svg'
+import simplicity from '../../svgs/simplicity.svg'
+import sustainability from '../../svgs/sustainability.svg'
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
  
 export const About: React.FC = () => {
@@ -59,7 +63,7 @@ export const About: React.FC = () => {
                         </Grid>
                         <Grid item>
                             <Card className={classes.card}>
-                                <img src={agility} alt="this is car image" width="100px" />
+                                <img src={dependebility} alt="this is car image" width="100px" />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         <b> Manoj Wadwan</b>
@@ -69,7 +73,7 @@ export const About: React.FC = () => {
                         </Grid>
                         <Grid item>
                             <Card className={classes.card}>
-                                <img src={agility} alt="this is car image" width="100px" />
+                                <img src={innovation} alt="this is car image" width="100px" />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         <b> Manoj Wadwan</b>
@@ -79,7 +83,7 @@ export const About: React.FC = () => {
                         </Grid>
                         <Grid item>
                             <Card className={classes.card}>
-                                <img src={agility} alt="this is car image" width="100px" />
+                                <img src={simplicity} alt="this is car image" width="100px" />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         <b> Manoj Wadwan</b>
@@ -89,7 +93,7 @@ export const About: React.FC = () => {
                         </Grid>
                         <Grid item>
                             <Card className={classes.card}>
-                                <img src={agility} alt="this is car image" width="100px" />
+                                <img src={sustainability} alt="this is car image" width="100px" />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         <b> Manoj Wadwan</b>
