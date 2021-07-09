@@ -4,10 +4,12 @@ export default makeStyles((theme: Theme) => ({
   toolbar: {
     paddingLeft: 50,
     paddingRight: 0,
-    backgroundColor: "#3f2ac7"
+    backgroundColor: '#7FFFEB',
+    color:'#070D0C'
   },
   toolbarLeft: {
-    backgroundColor: "#3f2ac7",
+    backgroundColor: '#7FFFEB',
+    color:'#070D0C',
     paddingLeft:600,
     paddingRight:100,
     textAlign: 'center',
@@ -32,8 +34,8 @@ export default makeStyles((theme: Theme) => ({
   link:{
     display: 'flex',
     alignItems: 'center',
+    fontWeight:'bolder',
     textDecoration: 'none',
-    fontWeight: 600,
     padding: 5,
     height: 100,
     cursor: 'pointer'

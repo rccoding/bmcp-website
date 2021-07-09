@@ -28,8 +28,8 @@ export const Topbar = () => {
 
 
   return (
-    <MuiAppBar  position="static" color="primary">
-      <Toolbar className={classes.toolbar} color="primary">
+    <MuiAppBar  position="static">
+      <Toolbar className={classes.toolbar} >
         <MaterialLink component="h1" variant="h6" color="secondary">
               Dashboard
             </MaterialLink>

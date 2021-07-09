@@ -1,13 +1,15 @@
-import { Avatar, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, Slide, Typography } from '@material-ui/core';
+import { Avatar, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, Link, Slide, SvgIcon, SvgIconProps, Typography } from '@material-ui/core';
 import React from 'react';
 import useStyles from './index'
 import manojWadwan from '../../images/manojWadwan.png'
 import vishalBharti from '../../images/vishalBharti.png'
-import sachinSharma from '../../images/sachinSharma.png'
 import himanshuSharma from '../../images/himanshuSharma.png'
 import sushilShrivastav from '../../images/sushilShrivastav.png'
 import rishabSahani from '../../images/rishabSahani.png'
 import ourvision from '../../images/ourvision.png'
+import agility from '../../svgs/agility.svg'
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+ 
 export const About: React.FC = () => {
     const classes = useStyles();
     return (
@@ -41,10 +43,67 @@ export const About: React.FC = () => {
                     customer care journey of consumers with their devices by ensuring an excellent and consistent customer care experience.
             </h3>
             </div>
-            <h1>We Value</h1>
+            <h1 >We Value</h1>
+            <Grid container className={classes.root} spacing={2} color="primary">
+                <Grid item xs={12}>
+                    <Grid container spacing={10}>
+                        <Grid item>
+                            <Card className={classes.card}>
+                                <img src={agility} alt="this is car image" width="100px" />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        <b> Manoj Wadwan</b>
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+                        </Grid>
+                        <Grid item>
+                            <Card className={classes.card}>
+                                <img src={agility} alt="this is car image" width="100px" />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        <b> Manoj Wadwan</b>
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+                        </Grid>
+                        <Grid item>
+                            <Card className={classes.card}>
+                                <img src={agility} alt="this is car image" width="100px" />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        <b> Manoj Wadwan</b>
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+                        </Grid>
+                        <Grid item>
+                            <Card className={classes.card}>
+                                <img src={agility} alt="this is car image" width="100px" />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        <b> Manoj Wadwan</b>
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+                        </Grid>
+                        <Grid item>
+                            <Card className={classes.card}>
+                                <img src={agility} alt="this is car image" width="100px" />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        <b> Manoj Wadwan</b>
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+                        </Grid>
+                        </Grid>
+                        </Grid>
+                        </Grid>
+
             <h1>Management Team</h1>
 
-               <Grid container className={classes.root} spacing={2}>
+               <Grid container className={classes.root} spacing={2} color="primary">
       <Grid item xs={12}>
         <Grid container justify="center" spacing={10}>
             <Grid item>
@@ -56,11 +115,12 @@ export const About: React.FC = () => {
                    />
                  <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        Manoj Wadwan
+                      <b> Manoj Wadwan</b>
                     </Typography>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Founder
+                         <b>Founder</b>
                     </Typography>
+                                    <Link href="https://www.linkedin.com/in/manoj-wadhawan-76613318b/"  ><LinkedInIcon className={classes.icon}/></Link>
                  </CardContent>
             </Card>
             </Grid>
@@ -73,11 +133,12 @@ export const About: React.FC = () => {
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                      Vishal Bharti
+                                      <b>Vishal Bharti</b>
                                     </Typography>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        Director Operations
+                                        <b>Director Operations</b>
                                     </Typography>
+                                    <Link href="https://www.linkedin.com/in/vishal-bharti-89222213/"  ><LinkedInIcon className={classes.icon} /></Link>
                                 </CardContent>
                             </Card>
                         </Grid>
@@ -90,10 +151,10 @@ export const About: React.FC = () => {
                                     />
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="h2">
-                                            Sushil Shrivastav
+                                            <b>Sushil Shrivastav</b>
                                         </Typography>
                                         <Typography gutterBottom variant="h5" component="h2">
-                                        Director Sales
+                                        <b>Director Sales</b>
                                         </Typography>
                                     </CardContent>
                                 </Card>
@@ -109,11 +170,12 @@ export const About: React.FC = () => {
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        Himanshu Sharma
+                                       <b>Himanshu Sharma</b>
                                     </Typography>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        Accounts Head
+                                       <b>Accounts Head</b>
                                     </Typography>
+                                    <Link href="https://www.linkedin.com/in/himanshu-sharma-0026a8146/"  ><LinkedInIcon className={classes.icon} /></Link>
                                 </CardContent>
                             </Card>
                         </Grid>
@@ -126,11 +188,12 @@ export const About: React.FC = () => {
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                     Rishab Sahani
+                                     <b>  Rishab Sahani</b>
                                     </Typography>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        Manager Operations
+                                      <b> Manager Operations</b>
                                     </Typography>
+                                    <Link href="https://www.linkedin.com/in/rishab-sahani-864ab6100/"  ><LinkedInIcon className={classes.icon} /></Link>
                                 </CardContent>
                             </Card>
                         </Grid>

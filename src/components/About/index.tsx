@@ -16,13 +16,21 @@ export default makeStyles((theme: Theme) => ({
         padding: theme.spacing(2),
     },
     card: {
+        border:'none',
+        color:'aliceblue',
+        boxShadow:'none',
         height:"100",
         textAlign:"center",
-        padding:"16px"
+        padding:"16px",
+        backgroundColor:'transparent'
     },
     media: {
         width: theme.spacing(30),
         height: theme.spacing(30),
         margin:"auto",
+    },
+    icon:{
+       fontSize:'40px',
+        color:'aliceblue'
     }
 }))
