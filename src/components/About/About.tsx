@@ -26,9 +26,9 @@ export const About: React.FC = () => {
                     src={ourvision}
                 />
                 </Slide>
-            <h1>Our Vision</h1>
+                <h1 className={classes.header}>Our Vision</h1>
             <h2>“To be the customer’s most trusted choice for service through continual improvement, ethical practices and commitment to achieve highest."</h2>
-            <h1>About US</h1>
+                <h1 className={classes.header}>About US</h1>
             <br></br>
             <h3>
                 Incepted in Yr.2016. BMCP is a fast growing neutral service provider in Mobile Handset, Consumer Electronics,
@@ -47,61 +47,62 @@ export const About: React.FC = () => {
                     customer care journey of consumers with their devices by ensuring an excellent and consistent customer care experience.
             </h3>
             </div>
-            <h1 >We Value</h1>
+            <h1 className={classes.header} >We Value</h1>
             <Grid container className={classes.root} spacing={2} color="primary">
-                <Grid item xs={12}>
-                    <Grid container spacing={10}>
-                        <Grid item>
-                            <Card className={classes.card}>
-                                <img src={agility} alt="this is car image" width="100px" />
+                <Grid item xs={2}>
+                            <Card className={classes.svg}>
+                                <img src={agility} alt="this is car image" width="70px" />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        <b> Manoj Wadwan</b>
+                                        <b> Agility</b>
+                                        <h3 className={classes.svgtext}>Lead change through ownership </h3>
                                     </Typography>
                                 </CardContent>
                             </Card>
                         </Grid>
-                        <Grid item>
-                            <Card className={classes.card}>
-                                <img src={dependebility} alt="this is car image" width="100px" />
+                <Grid item xs={2}>
+                            <Card className={classes.svg}>
+                                <img src={dependebility} alt="this is car image" width="70px" />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        <b> Manoj Wadwan</b>
+                                        <b>Dependebility</b>
+                                        <h3 className={classes.svgtext}> Build trust through commitment and execution </h3>
                                     </Typography>
                                 </CardContent>
                             </Card>
                         </Grid>
-                        <Grid item>
-                            <Card className={classes.card}>
-                                <img src={innovation} alt="this is car image" width="100px" />
+                <Grid item xs={2}>
+                            <Card className={classes.svg}>
+                                <img src={innovation} alt="this is car image" width="70px" />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        <b> Manoj Wadwan</b>
+                                        <b> Innovation </b>
+                                        <h3 className={classes.svgtext}>Create and deliver value through disruption</h3>
                                     </Typography>
                                 </CardContent>
                             </Card>
                         </Grid>
-                        <Grid item>
-                            <Card className={classes.card}>
-                                <img src={simplicity} alt="this is car image" width="100px" />
+                <Grid item xs={2}>
+                            <Card className={classes.svg}>
+                                <img src={simplicity} alt="this is car image" width="70px" />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        <b> Manoj Wadwan</b>
+                                        <b> Simplicity </b>
+                                        <h3 className={classes.svgtext}>Clarity of thought in all interactions</h3>
                                     </Typography>
                                 </CardContent>
                             </Card>
                         </Grid>
-                        <Grid item>
-                            <Card className={classes.card}>
-                                <img src={sustainability} alt="this is car image" width="100px" />
+                        <Grid item xs={2}>
+                            <Card className={classes.svg}>
+                                <img src={sustainability} alt="this is car image" width="70px" />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        <b> Manoj Wadwan</b>
+                                        <b> Sustainability </b>
+                                        <h3 className={classes.svgtext}>What we do today must help us tomorrow</h3>
                                     </Typography>
                                 </CardContent>
                             </Card>
-                        </Grid>
-                        </Grid>
                         </Grid>
                         </Grid>
 

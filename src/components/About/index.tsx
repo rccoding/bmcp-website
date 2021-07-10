@@ -1,7 +1,7 @@
 import { makeStyles, Theme } from '@material-ui/core/styles'
 
 export default makeStyles((theme: Theme) => ({
-    sidepic:{
+    sidepic: {
        height:700,
        width:700,
        position:"relative",
@@ -32,5 +32,24 @@ export default makeStyles((theme: Theme) => ({
     icon:{
        fontSize:'40px',
         color:'aliceblue'
-    }
+    },
+   header:{
+       fontSize:'50px',
+       textAlign:'left',
+       paddingLeft:'35px'
+   },
+   svg:{
+       border: 'none',
+       color: 'aliceblue',
+       boxShadow: 'none',
+       height: '50',
+       textAlign: 'center',
+       padding: "16px",
+       backgroundColor: 'transparent',
+       width:'100%'
+   },
+   svgtext:{
+      fontSize:'20px' ,
+       color:'#1e1e1f',
+   }
 }))
