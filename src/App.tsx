@@ -10,14 +10,12 @@ export const App: React.FC = () => {
   return (
     <div className="App">
       <Topbar />
+      <About />
       <Router>
         <Switch>
-          <Route path='/' component={Home} />
-          <Route path='/about' component={About} />
-          {/* <Route path='/srvices' component={Services} />
-                <Route path='/footer' component={Footer} />
-                <Route path='/footer' component={Footer} /> */}
+          <Route path='/About' component={About} />
           <Route path='/footer' component={Footer} />
+          <Route path='/' component={Home} />
         </Switch>
       </Router >
       <Footer />
