@@ -201,8 +201,8 @@ export const About: React.FC = () => {
                             </Card>
                         </Grid>
                         </Grid>
-                        </Grid>
-                        </Grid>
+                    </Grid>
+                    </Grid>
             </div>
     )
 }
