@@ -48,56 +48,56 @@ export const About: React.FC = () => {
             <h1 className={classes.header} >We Value</h1>
             <Grid container className={classes.root} spacing={2} color="primary">
                 <Grid item xs={2}>
-                            <Card className={classes.svg}>
+                            <Card className={classes.Svg}>
                                 <img src={agility} alt="this is car image" width="70px" />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         <b> Agility</b>
-                                        <h3 className={classes.svgtext}>Lead change through ownership </h3>
+                                        <h3 className={classes.SvgText}>Lead change through ownership </h3>
                                     </Typography>
                                 </CardContent>
                             </Card>
                         </Grid>
                 <Grid item xs={2}>
-                            <Card className={classes.svg}>
+                            <Card className={classes.Svg}>
                                 <img src={dependebility} alt="this is car image" width="70px" />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         <b>Dependebility</b>
-                                        <h3 className={classes.svgtext}> Build trust through commitment and execution </h3>
+                                        <h3 className={classes.SvgText}> Build trust through commitment and execution </h3>
                                     </Typography>
                                 </CardContent>
                             </Card>
                         </Grid>
                 <Grid item xs={2}>
-                            <Card className={classes.svg}>
+                            <Card className={classes.Svg}>
                                 <img src={innovation} alt="this is car image" width="70px" />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         <b> Innovation </b>
-                                        <h3 className={classes.svgtext}>Create and deliver value through disruption</h3>
+                                        <h3 className={classes.SvgText}>Create and deliver value through disruption</h3>
                                     </Typography>
                                 </CardContent>
                             </Card>
                         </Grid>
                 <Grid item xs={2}>
-                            <Card className={classes.svg}>
+                            <Card className={classes.Svg}>
                                 <img src={simplicity} alt="this is car image" width="70px" />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         <b> Simplicity </b>
-                                        <h3 className={classes.svgtext}>Clarity of thought in all interactions</h3>
+                                        <h3 className={classes.SvgText}>Clarity of thought in all interactions</h3>
                                     </Typography>
                                 </CardContent>
                             </Card>
                         </Grid>
                         <Grid item xs={2}>
-                            <Card className={classes.svg}>
+                            <Card className={classes.Svg}>
                                 <img src={sustainability} alt="this is car image" width="70px" />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         <b> Sustainability </b>
-                                        <h3 className={classes.svgtext}>What we do today must help us tomorrow</h3>
+                                        <h3 className={classes.SvgText}>What we do today must help us tomorrow</h3>
                                     </Typography>
                                 </CardContent>
                             </Card>

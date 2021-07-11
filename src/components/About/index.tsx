@@ -39,7 +39,7 @@ export default makeStyles((theme: Theme) => ({
        marginBottom:'30px',
        paddingLeft:'35px'
    },
-   svg:{
+   Svg:{
        border: 'none',
        color: 'aliceblue',
        boxShadow: 'none',
@@ -49,7 +49,7 @@ export default makeStyles((theme: Theme) => ({
        backgroundColor: 'transparent',
        width:'100%'
    },
-   svgtext:{
+   SvgText:{
       fontSize:'20px' ,
        color:'#1e1e1f',
    },
