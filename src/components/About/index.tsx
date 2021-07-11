@@ -33,9 +33,10 @@ export default makeStyles((theme: Theme) => ({
        fontSize:'40px',
         color:'aliceblue'
     },
-   header:{
+   header:{       
        fontSize:'50px',
        textAlign:'left',
+       marginBottom:'30px',
        paddingLeft:'35px'
    },
    svg:{
@@ -51,5 +52,8 @@ export default makeStyles((theme: Theme) => ({
    svgtext:{
       fontSize:'20px' ,
        color:'#1e1e1f',
+   },
+   aboutPara:{
+       marginBottom:'10px'
    }
 }))

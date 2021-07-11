@@ -29,8 +29,7 @@ export const About: React.FC = () => {
                 <h1 className={classes.header}>Our Vision</h1>
             <h2>“To be the customer’s most trusted choice for service through continual improvement, ethical practices and commitment to achieve highest."</h2>
                 <h1 className={classes.header}>About US</h1>
-            <br></br>
-            <h3>
+            <h3 className={classes.aboutPara}>
                 Incepted in Yr.2016. BMCP is a fast growing neutral service provider in Mobile Handset, Consumer Electronics,
                 Home Appliances, IT Solutions & hardware and Office Automation. We support our customers to do business better by leveraging our deep
                 customer service experience , experienced team , process driven approach , comprehensive portfolio of services and vertically aligned
@@ -39,8 +38,7 @@ export const About: React.FC = () => {
                 Multi-brand service capability and strong service management system (B-smarT)
                 make us a preferred destination for customers looking for a long term solution to their service-related needs
             </h3>
-            <br></br>
-            <h3>
+                <h3 className={classes.aboutPara}>
                     Based in the heart of India we aim high at being focused on building relationships with our clients and community. BMCP provides end to
                     end customer care solutions for mobile and wearable devices. We help many of the world’s leading mobile and wearable device companies deliver
                      a superior aftersales service experience. Using our creative gifts drives this foundation. Our experience allows clients to optimize the entire 
