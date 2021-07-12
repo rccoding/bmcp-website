@@ -14,7 +14,6 @@ export const App: React.FC = () => {
       <Router>
         <Switch>
           <Route path='/About' component={About} />
-          <Route path='/footer' component={Footer} />
           <Route path='/' component={Home} />
         </Switch>
       </Router >
