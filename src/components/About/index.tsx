@@ -10,7 +10,9 @@ export default makeStyles((theme: Theme) => ({
        marginRight:"-150px"
     },
     root: {
-        flexGrow: 1,
+        margin:'20px',
+        display: 'flex',
+        justifyContent: 'space-around'
     },
     control: {
         padding: theme.spacing(2),
@@ -37,13 +39,15 @@ export default makeStyles((theme: Theme) => ({
        fontSize:'50px',
        textAlign:'left',
        marginBottom:'30px',
+       padding:'20px',
        paddingLeft:'35px'
    },
     header1: {
         fontSize: '50px',
         textAlign: 'left',
-        marginTop: '63px',
-        paddingLeft: '35px'
+        paddingTop:'65px',
+        paddingLeft: '35px',
+        paddingBottom:'20px'
     },
    Svg:{
        border: 'none',
@@ -60,6 +64,14 @@ export default makeStyles((theme: Theme) => ({
        color:'#1e1e1f',
    },
    aboutPara:{
-       marginBottom:'10px'
+       margin:'35px',
+       fontSize:'larger',
+       fontWeight:'bolder'
+   },
+   value:{
+       fontSize: '50px',
+       textAlign: 'center',
+       marginBottom: '30px',
+       padding: '20px'
    }
 }))
