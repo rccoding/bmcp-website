@@ -26,7 +26,7 @@ export const About: React.FC = () => {
                     src={ourvision}
                 />
                 </Slide>
-                <h1 className={classes.header}>Our Vision</h1>
+                <h1 className={classes.header1}>Our Vision</h1>
             <h2>“To be the customer’s most trusted choice for service through continual improvement, ethical practices and commitment to achieve highest."</h2>
                 <h1 className={classes.header}>About US</h1>
             <h3 className={classes.aboutPara}>

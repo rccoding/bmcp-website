@@ -39,6 +39,12 @@ export default makeStyles((theme: Theme) => ({
        marginBottom:'30px',
        paddingLeft:'35px'
    },
+    header1: {
+        fontSize: '50px',
+        textAlign: 'left',
+        marginTop: '63px',
+        paddingLeft: '35px'
+    },
    Svg:{
        border: 'none',
        color: 'aliceblue',
