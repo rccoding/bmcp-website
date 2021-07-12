@@ -11,7 +11,7 @@ export default makeStyles((theme: Theme) => ({
     borderBottom: `1px solid ${theme.palette.divider}`
   },
   appBarScrolled: {
-    backgroundColor: '#7FFFEB',
+    background: 'linear-gradient( to bottom,#68EACC 0% , #497BE8 100%)',
     color: '#070D0C',
     borderBottom: '1px solid #ededed',
     transition: theme.transitions.create(['background-color'], {
