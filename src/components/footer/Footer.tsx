@@ -3,6 +3,7 @@ import './Footer.css';
 import { Call, Mail } from '@material-ui/icons';
 
 export const Footer: React.FC = () => {
+ const year = new Date().getFullYear();
     return (
         <footer className="footer">
             <div className="container">
@@ -47,7 +48,7 @@ export const Footer: React.FC = () => {
                 </div>
                 <div className='row1'>
                     <p className='copyright1'>
-                        Copyright ©  ' {new Date().getFullYear()} BMCP Inc. All rights reserved.
+                        Copyright ©  ' {year} BMCP Inc. All rights reserved.
                     </p>
                 </div>
             </div>
