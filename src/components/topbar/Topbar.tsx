@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
-import {Link as RouteLink} from 'react-router-dom';
+import {Link as RouteLink, Redirect} from 'react-router-dom';
 import {
-  AppBar as MuiAppBar,
+  AppBar,
   Button,
   Hidden,
   Toolbar,
@@ -11,12 +11,17 @@ import {
 import MenuIcon from '@material-ui/icons/Menu';
 import useStyles from './index';
 import { MenuItem } from '@material-ui/core';
+import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 
 
 export const Topbar = () => {
   const classes = useStyles()
   const [open, setOpen] = useState(false)
   const menuAnchorRef = useRef(null)
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 100
+  });
 
   function openMenu() {
     setOpen(true)
@@ -28,8 +33,12 @@ export const Topbar = () => {
 
 
   return (
-    <MuiAppBar  position="static" color="primary">
-      <Toolbar className={classes.toolbar} color="primary">
+    <AppBar position="fixed"
+      color="default"
+      elevation={0}
+      className={`${classes.appBar} ${trigger === false ? '' : classes.appBarScrolled
+        }`}>
+      <Toolbar className={classes.toolbar} >
         <MaterialLink component="h1" variant="h6" color="secondary">
               Dashboard
             </MaterialLink>
@@ -38,10 +47,11 @@ export const Topbar = () => {
             <MaterialLink component="h3" variant="h6" color="secondary">
             Home
           </MaterialLink>
-            <MaterialLink component="h3" variant="h6" color="secondary">
+            <MaterialLink href="/About"  component="h3" variant="h6" color="secondary" >
+
             About US
           </MaterialLink>
-            <MaterialLink component="h3" variant="h6" color="secondary">
+            <MaterialLink  component="h3" variant="h6" color="secondary">
            Brands
           </MaterialLink>
             <MaterialLink component="h3" variant="h6" color="secondary">
@@ -95,6 +105,6 @@ export const Topbar = () => {
                   </MenuItem>
       </Menu>
       </Toolbar>
-          </MuiAppBar>
+          </AppBar>
   )
 }
