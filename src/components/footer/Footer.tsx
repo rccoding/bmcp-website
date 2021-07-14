@@ -48,7 +48,7 @@ export const Footer: React.FC = () => {
                 </div>
                 <div className='row1'>
                     <p className='copyright1'>
-                        Copyright ©  ' {year} BMCP Inc. All rights reserved.
+                        Copyright 	&copy;  {year} BMCP Inc. All rights reserved.
                     </p>
                 </div>
             </div>
