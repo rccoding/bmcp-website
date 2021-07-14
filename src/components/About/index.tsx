@@ -11,6 +11,7 @@ export default makeStyles((theme: Theme) => ({
     },
     root: {
         margin:'20px',
+        paddingRight: '90px',
         display: 'flex',
         justifyContent: 'space-around'
     },
