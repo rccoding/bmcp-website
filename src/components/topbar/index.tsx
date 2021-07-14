@@ -1,13 +1,29 @@
 import { makeStyles, Theme } from '@material-ui/core/styles'
 
 export default makeStyles((theme: Theme) => ({
+  appBar: {
+    backgroundColor: 'transparent',
+    transition: theme.transitions.create(['background-color'], {
+      easing: theme.transitions.easing.easeOut,
+      duration: theme.transitions.duration.standard
+    }),
+    padding: '0 20px',
+    borderBottom: `1px solid ${theme.palette.divider}`
+  },
+  appBarScrolled: {
+    background: 'linear-gradient( to bottom,#68EACC 0% , #497BE8 100%)',
+    color: '#070D0C',
+    borderBottom: '1px solid #ededed',
+    transition: theme.transitions.create(['background-color'], {
+      easing: theme.transitions.easing.easeOut,
+      duration: theme.transitions.duration.standard
+    })
+  },
   toolbar: {
     paddingLeft: 50,
     paddingRight: 0,
-    backgroundColor: "#3f2ac7"
   },
   toolbarLeft: {
-    backgroundColor: "#3f2ac7",
     paddingLeft:600,
     paddingRight:100,
     textAlign: 'center',
@@ -32,8 +48,8 @@ export default makeStyles((theme: Theme) => ({
   link:{
     display: 'flex',
     alignItems: 'center',
+    fontWeight:'bolder',
     textDecoration: 'none',
-    fontWeight: 600,
     padding: 5,
     height: 100,
     cursor: 'pointer'
