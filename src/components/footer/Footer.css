@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px; 
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background: linear-gradient( to bottom,#68EACC 0% , #497BE8 100%);
+    padding: 70px 0;  
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: white;
+    font-weight: 400;
+    text-align: justify;
+    position: relative;
+}
+.footer-col h4::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: black;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size:16px;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    color: black;
+    text-align: justify;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: white;
+    padding-left: 8px;
+}
+.location{
+    margin-left: -30px;
+}
+.mail{
+    list-style: none;
+    text-align: justify;
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 5px; 
+}
+.mail h5{
+    font-size: 18px;
+    color: black;
+    font-weight: 300;    
+}
+
+.mail1{
+    margin-top: 4px;
+    color: black;
+}
+.call{
+    list-style: none;
+    text-align: justify;  
+    font-size: 16px;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 6px;
+    margin-top: -5px;
+}
+.call h5{
+    font-size: 18px;
+    color: black;
+    font-weight: 300; 
+}
+.call1{
+    margin-top: 4px;
+    color: black;
+}
+.row{
+    margin-left: 25px;
+}
+.copyright{
+   text-align: center;
+    font-size:16.5px;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    color: black;
+    margin-top: 15px;
+    margin-left: 120px; 
+    margin-right: 40px;
+}
+.row1{
+   margin-right: 15px;
+}
+.copyright1{
+    text-align: center;
+    font-size:17px;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    color: black;
+    margin-top: 20px;
+    margin-left: -15px; 
+    margin-right: 5px;
+}
+/*responsive*/
+@media(max-width:767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:574px){
+    .footer-col{
+        width: 100%;
+
+    }
+}
