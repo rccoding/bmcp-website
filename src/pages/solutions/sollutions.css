@@ -1,0 +1,88 @@
+
+.solutions {
+    padding-top: 50px;
+    text-align: center;
+    
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  body {
+   
+   
+    padding: 60px;
+    font-family: Arial;
+    text-align: center;
+   
+  }
+  .card1
+  {
+    width:100%;
+    align-self:baseline;
+    height:100%;
+    background: transparent;
+    overflow:visible;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-width: 0px !important;
+  }
+  .cont
+  {
+    align-self: center !important;
+    resize: inherit;
+    width: 50%;
+    height: 70% !important;
+  }
+  .card
+  {
+    height:400px;
+    text-align:center;
+    width:300px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    overflow:auto;
+    cursor: pointer;
+    transition: opacity 2s;
+    
+  }
+  .card:hover{
+    transform: translateY(-0.25%);
+    box-shadow: 0 2rem 2rem rgba(20, 18, 18, 0.5);
+  }
+  .sol{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin-top: 0px;
+    font-size: 1.6rem;
+    padding-top: 4%;
+    opacity: 1;
+    align-items: center;
+    transition: opacity 2s;
+    color: black;
+    font-style:inherit;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+  }
+  
+  
+  @media(max-width:767px){
+    .card{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+  }
+  @media(max-width:574px){
+    .body{
+        width: 100%;
+  
+    }
+  }

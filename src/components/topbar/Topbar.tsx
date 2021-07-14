@@ -9,7 +9,7 @@ import {
   Menu,
 } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
-import useStyles from './index'
+import useStyles from './index';
 import { MenuItem } from '@material-ui/core';
 
 

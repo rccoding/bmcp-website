@@ -16,7 +16,7 @@ import { blue, green } from '@material-ui/core/colors';
 import { react } from '@babel/types';
 
 
-const solutions : React.FC =()=>{
+const Solutions : React.FC =()=>{
   const classes=useStyles();
   useEffect(() => {
     Aos.init({duration:2000});
@@ -160,4 +160,4 @@ BMCP can develop full functionally intelligence to manage your business with eas
   );
 }
 
-export default solutions;
+export default Solutions;
