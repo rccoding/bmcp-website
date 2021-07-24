@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
-import {Link as RouteLink, Redirect} from 'react-router-dom';
+import {Link as RouteLink, Redirect, Route} from 'react-router-dom';
+
 import {
   AppBar,
   Button,
@@ -9,7 +10,7 @@ import {
   Menu,
 } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
-import useStyles from './index';
+import useStyles from './index'
 import { MenuItem } from '@material-ui/core';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 
@@ -39,30 +40,29 @@ export const Topbar = () => {
       className={`${classes.appBar} ${trigger === false ? '' : classes.appBarScrolled
         }`}>
       <Toolbar className={classes.toolbar} >
-        <MaterialLink component="h1" variant="h6" color="secondary">
+        <RouteLink to="/about" color="secondary">
               Dashboard
-            </MaterialLink>
+           </RouteLink>
             <Hidden only={['xs']}>
           <div className={classes.toolbarLeft}>
-            <MaterialLink component="h3" variant="h6" color="secondary">
+            <RouteLink to="/" color="secondary">
             Home
-          </MaterialLink>
-            <MaterialLink href="/About"  component="h3" variant="h6" color="secondary" >
-
-            About US
-          </MaterialLink>
-            <MaterialLink  component="h3" variant="h6" color="secondary">
+         </RouteLink>
+            <RouteLink to="/about"  color="secondary" >
+            About Us
+          </RouteLink>
+            <RouteLink to="/about"  color="secondary">
            Brands
-          </MaterialLink>
-            <MaterialLink component="h3" variant="h6" color="secondary">
+         </RouteLink>
+            <RouteLink to="/solutions" color="secondary">
            Contact 
-          </MaterialLink>
-            <MaterialLink component="h3" variant="h6" color="secondary">
+         </RouteLink>
+            <RouteLink to="/about"  color="secondary">
            Gallery
-          </MaterialLink>
-            <MaterialLink component="h3" variant="h6" color="secondary">
+         </RouteLink>
+            <RouteLink to="/Service" color="secondary">
           Services
-          </MaterialLink>
+         </RouteLink>
           </div>
             </Hidden>
         <Hidden only={['md', 'xl', 'lg','sm']} >
@@ -74,34 +74,34 @@ export const Topbar = () => {
         </Hidden>
       <Menu keepMounted open={open} anchorEl={menuAnchorRef.current}  onClose={closeMenu} >
         <MenuItem>
-        <MaterialLink component="h3" variant="h6" color="primary">
+            <RouteLink to="/about" color="primary">
           Home
-        </MaterialLink>
+       </RouteLink>
         </MenuItem>
           <MenuItem>
-          <MaterialLink component="h3" variant="h6" color="primary">
+            <RouteLink to="/about" color="primary">
           About US
-        </MaterialLink>
+       </RouteLink>
           </MenuItem>
           <MenuItem>
-          <MaterialLink component="h3" variant="h6" color="primary">
+            <RouteLink to="/about"  color="primary">
           Brands
-        </MaterialLink>
+       </RouteLink>
             </MenuItem>
             <MenuItem>
-          <MaterialLink component="h3" variant="h6" color="primary">
+            <RouteLink to="/about" color="primary">
           Contact
-        </MaterialLink>
+       </RouteLink>
               </MenuItem>
               <MenuItem>
-          <MaterialLink component="h3" variant="h6" color="primary">
+            <RouteLink to="/about" color="primary">
           Gallery
-        </MaterialLink>
+       </RouteLink>
                 </MenuItem>
                 <MenuItem>
-          <MaterialLink component="h3" variant="h6" color="primary">
+            <RouteLink to="/about"  color="primary">
           Services
-        </MaterialLink>     
+       </RouteLink>     
                   </MenuItem>
       </Menu>
       </Toolbar>

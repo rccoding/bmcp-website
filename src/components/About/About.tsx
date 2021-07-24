@@ -69,7 +69,7 @@ export const About: React.FC = () => {
                             <Card className={classes.Svg}>
                                 <img src={dependebility} alt="this is car image" width="70px" />
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
+                                    <Typography gutterBottom variant="h5" component="h2" >
                                         <b>Dependebility</b>
                                         <h3 className={classes.SvgText}> Build trust through commitment and execution </h3>
                                     </Typography>

@@ -30,7 +30,7 @@ const Solutions : React.FC =()=>{
     <Grid container  spacing={2}>
                   <Grid item xs={12}>
         <Grid container justify="space-evenly" spacing={10}>
-            <Grid item xs ={4}><Paper>
+            <Grid item xs ={4}>
               <Card className="card" >
                               <img src={crm} alt="this is car image" width="100px"/>
                 <CardContent>
@@ -46,9 +46,9 @@ const Solutions : React.FC =()=>{
 
                    
                 </CardContent>
-            </Card></Paper>
+            </Card>
             </Grid>
-                  <Grid item xs={4}><Paper>
+                  <Grid item xs={4}>
                       <Card className='card'>
                           <img src={web} alt="this is car image" width="100px"/>
                           <CardContent>
@@ -61,9 +61,9 @@ const Solutions : React.FC =()=>{
 
                     
                           </CardContent>
-                      </Card></Paper>
+                      </Card>
                   </Grid>
-                      <Grid item xs={4} ><Paper>
+                      <Grid item xs={4} >
                           <Card className="card" >
                           <img src={app} alt="this is car image" width="100px"/>
                               <CardContent>
@@ -80,7 +80,7 @@ const Solutions : React.FC =()=>{
               Andriod & Apple OS as per customer requirement.
                     
                               </CardContent>
-                          </Card></Paper>
+                          </Card>
                   </Grid>
                       </Grid>
               <Grid container justify="center" spacing={10} >
@@ -111,7 +111,6 @@ BMCP can develop full functionally intelligence to manage your business with eas
                   
 
                   <Grid item xs={4}>
-                    <Paper>
                       <Card className="card">
     
                           <img src={security} alt="this is car image" width="100px"/>   
@@ -126,13 +125,13 @@ BMCP can develop full functionally intelligence to manage your business with eas
 
                     
                           </CardContent>
-                      </Card></Paper>
+                      </Card>
                       
                     
                   </Grid>
              
               <Grid item xs={4}>
-              <Paper>
+        
                       <Card className="card">
                       
                       <img src={project} alt="this is car image" width="100px"/>
@@ -149,7 +148,6 @@ BMCP can develop full functionally intelligence to manage your business with eas
                     
                           </CardContent>
                       </Card>
-                      </Paper>
                       </Grid>
                       
                   </Grid>
